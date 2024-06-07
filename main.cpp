@@ -62,7 +62,7 @@ int main()
         {
             continue;
         }
-        char *argv[tokens.size()];
+        char **argv = new char *[tokens.size()];
         int argc = tokens.size();
         convertVectorToCharArray(tokens, argv);
         try
